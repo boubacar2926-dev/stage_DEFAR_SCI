@@ -1,0 +1,2 @@
+- **Dépôt GitHub** : https://github.com/boubacar2926-dev/stage_DEFAR_SCI
+- **Site Déployé (GitHub Pages)** : https://boubacar2926-dev.github.io/stage_DEFAR_SCI/
