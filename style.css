@@ -1,0 +1,419 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #005f73;
+  background-color: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 6%;
+  background-color: #ffffff;
+  border-bottom: 2px solid #005f73;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #005f73;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  background-color: #005f73;
+  padding: 0.6rem 2rem;
+  border-radius: 6px;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+nav a.active, nav a:hover {
+  font-weight: 700;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.auth-buttons .btn-auth {
+  text-decoration: none;
+  color: #005f73;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* SECTION ACCUEIL (HERO) RECTIFIÉE */
+.hero {
+  padding: 5rem 6%;
+  background-color: #ffffff;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 55%;
+}
+
+.badge {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0.1rem;
+}
+
+.hero-content p {
+  
+  
+  line-height: 1.35;
+  color:black ;
+  margin-bottom: 1.2rem;
+}
+
+.hero-description {
+  font-size: 0.95rem;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  margin: 200px auto 0;
+  gap: 20px;
+  max-width: 1200px;
+  padding: 0 40px;
+}
+
+.btn-primary {
+  background-color: #005f73;
+  color: #ffffff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  display: inline-block;
+}
+
+.btn-secondary {
+  background-color:  #ffffff;
+  color:#005f73;
+  padding: 0.8rem 1.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: #005f73;
+}
+
+.btn-secondary .arrow {
+  font-size: 0.8rem;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+
+  margin-top: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* SECTION À PROPOS */
+.about {
+  background-color: #005f73;
+  color: #ffffff;
+  padding: 4rem 12%;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.about-headline {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.about p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+}
+
+/* TITRES DE SECTIONS */
+section h2 {
+  text-align: center;
+  color: #005f73;
+  font-size: 2rem;
+  margin: 3rem 0 0.5rem;
+  font-weight: bold;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 4px;
+  background-color: #005f73;
+  margin: 0.6rem auto 2.5rem;
+}
+
+/* PARTENAIRES */
+.partners-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 5% 4rem;
+}
+
+.logos-grid {
+  display: flex;
+  gap: 2rem;
+  background-color: #a8e0f0;
+  padding: 2.5rem 3rem;
+  border-radius: 4px;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.partner-card img {
+  max-width: 130px;
+  height: auto;
+}
+
+.nav-btn {
+  background: #005f73;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 0.8rem;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  margin;
+}
+
+/* TÉMOIGNAGES */
+.testimonials-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 5% 4rem;
+}
+
+.testimonials-grid {
+  display: flex;
+  gap: 2.5rem;
+  width: 70%;
+}
+
+.testimonial-card {
+  flex: 1;
+  border: 1px solid #dcdcdc;
+  padding: 3.5rem 1.5rem 1.5rem;
+  text-align: center;
+  position: relative;
+  border-radius: 4px;
+  margin-top: 40px;
+  background-color: #ffffff;
+}
+
+.avatar-wrapper {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.avatar-wrapper img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.testimonial-card h3 {
+  font-size: 1.1rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+.testimonial-card .role {
+  color: #888888;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card .desc {
+  font-size: 0.85rem;
+  color: #333333;
+  line-height: 1.5;
+}
+
+/* CONTACT */
+.contact-box {
+  background-color: #005f73;
+  max-width: 650px;
+  margin: 0 auto 5rem;
+  padding: 3rem 2.5rem;
+  border-radius: 4px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 3rem 8% 1.5rem;
+  font-size: 0.85rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-col h3 {
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.footer-col p {
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.footer-col.social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* STYLE DE BASE DES PILULES SOCIALES */
+.social-pill {
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+}
+
+.social-pill a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: #005f73;
+  text-decoration: none;
+}
+
+.social-pill svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* PILULE HORIZONTALE (Sous "A Propos") */
+.social-pill.horizontal {
+  flex-direction: row;
+  gap: 15px;
+  padding: 8px 16px;
+  width: fit-content;
+  margin-top: 1.5rem;
+}
+
+/* PILULE VERTICALE (À droite du footer) */
+.social-pill.vertical {
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px 8px;
+  align-items: center;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #222222;
+  padding-top: 1.5rem;
+  font-size: 0.75rem;
+  color: #888888;
+}
