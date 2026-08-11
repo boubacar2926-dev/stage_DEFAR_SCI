@@ -63,22 +63,24 @@ nav a.active, nav a:hover {
 
 /* SECTION ACCUEIL (HERO) RECTIFIÉE */
 .hero {
-  padding: 5rem 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  height: 90vh;
+  padding: 2rem;
   background-color: #ffffff;
 }
 
 .hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 3rem;
+ 
 }
 
 .hero-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex: 1;
-  max-width: 55%;
 }
 
 .badge {
@@ -105,17 +107,17 @@ nav a.active, nav a:hover {
 }
 
 .hero-actions {
+  align-self: center;
   display: flex;
-  margin: 200px auto 0;
   gap: 20px;
   max-width: 1200px;
-  padding: 0 40px;
+  align-items: center;
 }
 
 .btn-primary {
   background-color: #005f73;
   color: #ffffff;
-  padding: 0.8rem 1.8rem;
+  padding: 0.8rem 1rem;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
@@ -126,7 +128,8 @@ nav a.active, nav a:hover {
 .btn-secondary {
   background-color:  #ffffff;
   color:#005f73;
-  padding: 0.8rem 1.8rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #005f73;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
@@ -134,7 +137,6 @@ nav a.active, nav a:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  border: #005f73;
 }
 
 .btn-secondary .arrow {
@@ -143,11 +145,11 @@ nav a.active, nav a:hover {
 
 .hero-image {
   flex: 1;
-  max-width: 30%;
+  max-width: 300px;
+  width: 20%;
   display: flex;
   justify-content: center;
   flex-shrink: 0;
-
   margin-top: 0;
 }
 
