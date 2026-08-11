@@ -242,11 +242,16 @@ section h2::after {
   background: #005f73;
   color: #ffffff;
   border: none;
-  padding: 0.6rem 0.8rem;
+  padding: 0.2rem 0.4rem;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 1px;
   font-size: 0.9rem;
-  margin;
+  
+}
+
+.defar-logo {
+  max-width: 500px;
+  transform: scale(2);
 }
 
 /* TÉMOIGNAGES */
